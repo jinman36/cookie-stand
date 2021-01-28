@@ -15,6 +15,27 @@ let tokyo = {
   name: 'Tokyo',
   main: 3,
   max: 24,
-  avg: 1.2
+  avg: 1.2,
+}
+
+let dubai = {
+  name: 'Dubai',
+  main: 11,
+  max: 38,
+  avg: 3.7,
+}
+
+let paris = {
+  name: 'Paris',
+  min: 20,
+  max: 38,
+  avg: 2.3,
+}
+
+let lima = {
+  name: 'Lima',
+  min: 2,
+  max: 16,
+  avg: 4.6,
 }
 
