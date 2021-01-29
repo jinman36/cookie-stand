@@ -9,6 +9,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 #### submission PR
 
 #### Links and Resources
+  - Code Review, Code Review, Code Review
   - [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
   - [Wire frames](https://mentormate.com/blog/low-fidelity-wireframes-vs-high-fidelity-wireframes/)
   - [wire Frames 2](https://www.justinmind.com/blog/low-fidelity-vs-high-fidelity-wireframing-is-paper-dead/)
