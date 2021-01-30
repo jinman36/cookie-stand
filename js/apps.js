@@ -198,8 +198,8 @@ let lima = {
 
 };
 
-seattle.render ();
-tokyo.render ();
-dubai.render ();
-paris.render ();
-lima.render ();
+seattle.render();
+tokyo.render();
+dubai.render();
+paris.render();
+lima.render();
