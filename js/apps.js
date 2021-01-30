@@ -23,7 +23,7 @@ function cookieStand(storeName, cookiesPerHourArray, dailyTotal) {
       tr.textContent = this.cookiesPerHourArray[i];
 
     }
-  }
+  };
 }
 
 cookieStand();
