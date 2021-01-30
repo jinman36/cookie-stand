@@ -2,6 +2,9 @@
 
 console.log('hello world');
 
+let myContainer = document.getElementById('container');
+let cookieTable = document.getElementById('cookieTable');
+
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 var seattleList = document.getElementById('seattle');
@@ -36,7 +39,6 @@ let seattle = {
     // console.log(this.cookiesPerHourArray);
     // let randomCustomerForOneHour = this.randomCustomerHour();
   },
-
 
   render: function () {
     this.calculateSalesByHour();
