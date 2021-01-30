@@ -2,6 +2,9 @@
 
 console.log('hello world');
 
+let myContainer = document.getElementById('container');
+let cookieTable = document.getElementById('cookieTable');
+
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 var seattleList = document.getElementById('seattle');
@@ -10,6 +13,20 @@ var dubaiList = document.getElementById('dubai');
 var parisList = document.getElementById('paris');
 var limaList = document.getElementById('lima');
 
+// Constructor:
+function cookieStand(storeName, cookiesPerHourArray, dailyTotal) {
+  this.storeName = storeName;
+  this.cookiesPerHourArray = cookiesPerHourArray;
+  this.dailyTotal = dailyTotal;
+  this.render = function () {
+    for (let i = 0; i < this.cookiesPerHourArray.length; i++) {
+      tr.textContent = this.cookiesPerHourArray[i];
+
+    }
+  }
+}
+
+cookieStand();
 
 
 // Object literal - Seattle
