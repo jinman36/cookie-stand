@@ -13,6 +13,20 @@ var dubaiList = document.getElementById('dubai');
 var parisList = document.getElementById('paris');
 var limaList = document.getElementById('lima');
 
+// Constructor:
+function cookieStand(storeName, cookiesPerHourArray, dailyTotal) {
+  this.storeName = storeName;
+  this.cookiesPerHourArray = cookiesPerHourArray;
+  this.dailyTotal = dailyTotal;
+  this.render = function () {
+    for (let i = 0; i < this.cookiesPerHourArray.length; i++) {
+      tr.textContent = this.cookiesPerHourArray[i];
+
+    }
+  }
+}
+
+cookieStand();
 
 
 // Object literal - Seattle
