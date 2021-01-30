@@ -10,8 +10,6 @@ var dubaiList = document.getElementById('dubai');
 var parisList = document.getElementById('paris');
 var limaList = document.getElementById('lima');
 
-
-
 // Object literal - Seattle
 let seattle = {
   storeName: 'Seattle',
@@ -27,10 +25,8 @@ let seattle = {
   },
 
   // console.log('random customer hour');
-
   // calculate number of cookies per hour
   calculateSalesByHour: function () {
-    // this.randomCustomersPerHour();
     for (let i = 0; i < hours.length; i++) {
       let randomCust = this.randomCustomersPerHour();
       let hourlyTotal = Math.floor(randomCust * this.avgCookiesCustomer);
@@ -66,31 +62,22 @@ let tokyo = {
   cookiesPerHourArray: [],
   dailyTotal: 0,
 
-  // get randon number of customers for an hour
   randomCustomersPerHour: function () {
     return Math.floor(Math.random() * (this.maxCustomersHour - this.minCustomersHour + 1) + this.minCustomersHour);
   },
 
-  // console.log('random customer hour');
-
-  // calculate number of cookies per hour
   calculateSalesByHour: function () {
-    // this.randomCustomersPerHour();
     for (let i = 0; i < hours.length; i++) {
       let randomCust = this.randomCustomersPerHour();
       let hourlyTotal = Math.floor(randomCust * this.avgCookiesCustomer);
       this.cookiesPerHourArray.push(hourlyTotal);
       this.dailyTotal += hourlyTotal;
     }
-    // console.log(this.cookiesPerHourArray);
-    // let randomCustomerForOneHour = this.randomCustomerHour();
-  },
 
+  },
 
   render: function () {
     this.calculateSalesByHour();
-    // console.log(cookiesPerHour[i]);
-    // console.log(this.avgCookiesCustomer);
     for (let i = 0; i < this.cookiesPerHourArray.length; i++) {
       let li = document.createElement('li');
       li.textContent = `${hours[i]}: ${this.cookiesPerHourArray[i]}`;
@@ -111,31 +98,22 @@ let dubai = {
   cookiesPerHourArray: [],
   dailyTotal: 0,
 
-  // get randon number of customers for an hour
   randomCustomersPerHour: function () {
     return Math.floor(Math.random() * (this.maxCustomersHour - this.minCustomersHour + 1) + this.minCustomersHour);
   },
 
-  // console.log('random customer hour');
-
-  // calculate number of cookies per hour
   calculateSalesByHour: function () {
-    // this.randomCustomersPerHour();
     for (let i = 0; i < hours.length; i++) {
       let randomCust = this.randomCustomersPerHour();
       let hourlyTotal = Math.floor(randomCust * this.avgCookiesCustomer);
       this.cookiesPerHourArray.push(hourlyTotal);
       this.dailyTotal += hourlyTotal;
     }
-    // console.log(this.cookiesPerHourArray);
-    // let randomCustomerForOneHour = this.randomCustomerHour();
-  },
 
+  },
 
   render: function () {
     this.calculateSalesByHour();
-    // console.log(cookiesPerHour[i]);
-    // console.log(this.avgCookiesCustomer);
     for (let i = 0; i < this.cookiesPerHourArray.length; i++) {
       let li = document.createElement('li');
       li.textContent = `${hours[i]}: ${this.cookiesPerHourArray[i]}`;
@@ -156,31 +134,22 @@ let paris = {
   cookiesPerHourArray: [],
   dailyTotal: 0,
 
-  // get randon number of customers for an hour
   randomCustomersPerHour: function () {
     return Math.floor(Math.random() * (this.maxCustomersHour - this.minCustomersHour + 1) + this.minCustomersHour);
   },
 
-  // console.log('random customer hour');
-
-  // calculate number of cookies per hour
   calculateSalesByHour: function () {
-    // this.randomCustomersPerHour();
     for (let i = 0; i < hours.length; i++) {
       let randomCust = this.randomCustomersPerHour();
       let hourlyTotal = Math.floor(randomCust * this.avgCookiesCustomer);
       this.cookiesPerHourArray.push(hourlyTotal);
       this.dailyTotal += hourlyTotal;
     }
-    // console.log(this.cookiesPerHourArray);
-    // let randomCustomerForOneHour = this.randomCustomerHour();
-  },
 
+  },
 
   render: function () {
     this.calculateSalesByHour();
-    // console.log(cookiesPerHour[i]);
-    // console.log(this.avgCookiesCustomer);
     for (let i = 0; i < this.cookiesPerHourArray.length; i++) {
       let li = document.createElement('li');
       li.textContent = `${hours[i]}: ${this.cookiesPerHourArray[i]}`;
@@ -201,31 +170,22 @@ let lima = {
   cookiesPerHourArray: [],
   dailyTotal: 0,
 
-  // get randon number of customers for an hour
   randomCustomersPerHour: function () {
     return Math.floor(Math.random() * (this.maxCustomersHour - this.minCustomersHour + 1) + this.minCustomersHour);
   },
 
-  // console.log('random customer hour');
-
-  // calculate number of cookies per hour
   calculateSalesByHour: function () {
-    // this.randomCustomersPerHour();
     for (let i = 0; i < hours.length; i++) {
       let randomCust = this.randomCustomersPerHour();
       let hourlyTotal = Math.floor(randomCust * this.avgCookiesCustomer);
       this.cookiesPerHourArray.push(hourlyTotal);
       this.dailyTotal += hourlyTotal;
     }
-    // console.log(this.cookiesPerHourArray);
-    // let randomCustomerForOneHour = this.randomCustomerHour();
-  },
 
+  },
 
   render: function () {
     this.calculateSalesByHour();
-    // console.log(cookiesPerHour[i]);
-    // console.log(this.avgCookiesCustomer);
     for (let i = 0; i < this.cookiesPerHourArray.length; i++) {
       let li = document.createElement('li');
       li.textContent = `${hours[i]}: ${this.cookiesPerHourArray[i]}`;
@@ -238,8 +198,8 @@ let lima = {
 
 };
 
-seattle.render();
-tokyo.render();
-dubai.render();
-paris.render();
-lima.render();
+seattle.render ();
+tokyo.render ();
+dubai.render ();
+paris.render ();
+lima.render ();
