@@ -7,12 +7,6 @@ let tableFooter = document.getElementById('footer');
 let totalCookieStands = [];
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
-// var seattleList = document.getElementById('seattle');
-// var tokyoList = document.getElementById('tokyo');
-// var dubaiList = document.getElementById('dubai');
-// var parisList = document.getElementById('paris');
-// var limaList = document.getElementById('lima');
-
 
 // Constructor:
 function CookieStand(storeName, minCustomersHour, maxCustomersHour, avgCookiesCustomer) {
@@ -33,7 +27,6 @@ CookieStand.prototype.calculateSalesByHour = function () {
   for (let i = 0; i < hours.length; i++) {
     let randomCust = this.randomCustomersPerHour();
     let hourlyTotal = Math.floor(randomCust * this.avgCookiesCustomer);
-    // this.cookiesSoldArray[i] = hourlyTotal;
     this.cookiesSoldArray.push(hourlyTotal);
     this.dailyTotal += hourlyTotal;
   }
@@ -65,7 +58,6 @@ function renderHeader() {
   let th = document.createElement('th');
   th.textContent = 'CookieStands';
   tr.appendChild(th);
-  // tableHeader.appendChild(th);
 
   for (let i = 0; i < hours.length; i++) {
     let td = document.createElement('td');
@@ -95,7 +87,6 @@ function renderFooter() {
     td.textContent = allStoresHourlyTotal;
     tr.appendChild(td);
     allStoresDailyTotals += allStoresHourlyTotal;
-    // console.log(allStoresDailyTotals);
   }
   let td = document.createElement('td');
   td.textContent = allStoresDailyTotals;
