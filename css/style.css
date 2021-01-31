@@ -65,3 +65,23 @@ li {
 button {
   background-color: black;
 }
+
+table {
+  border: thin double darkblue;
+  width: 960px;
+  color: cornflowerblue;
+  margin-top: 2%;
+  position: fixed;
+}
+
+#header {
+  border: thin solid darkblue;
+}
+
+#footer {
+  border: thin solid darkblue;
+}
+
+td {
+  border: thin solid darkblue;
+}
