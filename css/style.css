@@ -22,9 +22,12 @@ h1 {
   color: aqua;
 }
 
+nav {
+  margin-inline: 700px;
+}
+
 section {
   border-radius: 25px;
-  margin 15%;
 }
 
 section img {
@@ -68,7 +71,8 @@ button {
 
 #table {
   outline-style: groove;
-  align-content:center;
+  margin: auto;
+  text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: rgb(1, 20, 39);
   color: lightblue;
