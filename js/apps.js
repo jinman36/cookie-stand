@@ -1,6 +1,6 @@
 'use strict';
 
-let cookieTable = document.getElementById('table');
+// let cookieTable = document.getElementById('table');
 let tableHeader = document.getElementById('header');
 let tableBody = document.getElementById('body');
 let tableFooter = document.getElementById('footer');
@@ -106,3 +106,4 @@ function renderAll() {
 renderAll();
 renderHeader();
 renderFooter();
+
