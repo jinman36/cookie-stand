@@ -1,12 +1,11 @@
 'use strict';
 
-
 let cookieTable = document.getElementById('table');
 let tableHeader = document.getElementById('header');
+let tableBody = document.getElementById('body');
 let tableFooter = document.getElementById('footer');
 let totalCookieStands = [];
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-
 
 // Constructor:
 function CookieStand(storeName, minCustomersHour, maxCustomersHour, avgCookiesCustomer) {
@@ -32,11 +31,10 @@ CookieStand.prototype.calculateSalesByHour = function () {
   }
 };
 
-
 CookieStand.prototype.render = function () {
   this.calculateSalesByHour();
   let tr = document.createElement('tr');
-  cookieTable.appendChild(tr);
+  tableBody.appendChild(tr);
 
   let th = document.createElement('th');
   th.textContent = this.storeName;
@@ -51,7 +49,6 @@ CookieStand.prototype.render = function () {
   td.textContent = this.dailyTotal;
   tr.appendChild(td);
 };
-
 
 function renderHeader() {
   let tr = document.createElement('tr');
@@ -98,7 +95,6 @@ new CookieStand('Tokyo', 3, 24, 1.2);
 new CookieStand('Dubai', 11, 38, 3.7);
 new CookieStand('Paris', 20, 38, 2.3);
 new CookieStand('Lima', 2, 16, 4.6);
-
 
 function renderAll() {
   for (let i = 0; i < totalCookieStands.length; i++) {
