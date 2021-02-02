@@ -66,7 +66,7 @@ button {
   background-color: black;
 }
 
-table {
+#table {
   border: thin double darkblue;
   width: 960px;
   color: cornflowerblue;
@@ -75,13 +75,13 @@ table {
 }
 
 #header {
-  border: thin solid darkblue;
+  border: thin solid rgb(1, 1, 39);
 }
 
-#footer {
-  border: thin solid darkblue;
+th {
+  border: thin solid rgb(2, 0, 10);
 }
 
 td {
-  border: thin solid darkblue;
+  border: thin solid rgb(5, 5, 207);
 }
