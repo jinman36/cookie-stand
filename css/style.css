@@ -16,6 +16,7 @@ header {
 }
 
 h1 {
+  font-family: 'Lemonada', cursive;
   font-size: 3em;
   text-align: center;
   margin: 5%;
@@ -48,6 +49,7 @@ h3 {
 }
 
 p {
+  font-family: 'Archivo Narrow', sans-serif;
   line-height: 1.25em;
   text-align: justify;
 }
@@ -67,9 +69,12 @@ li {
 button {
   background-color: black;
   color: blanchedalmond;
+
+
 }
 
 #table {
+  /* font-family: 'Archivo Narrow', sans-serif; */
   outline-style: groove;
   margin: auto;
   text-align: center;
