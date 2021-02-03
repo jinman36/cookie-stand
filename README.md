@@ -15,7 +15,9 @@ I build an app with a direct and powerful purpose. It does all of the things tha
   - [wire Frames 2](https://www.justinmind.com/blog/low-fidelity-vs-high-fidelity-wireframing-is-paper-dead/)
   - [Setting up a site - codefellows](https://codefellows.github.io/code-201-guide/curriculum/class-02/project_setup)
   - [Audreys Github](https://github.com/arpatterson31/cookie-stand)
-  
+  - Google Fonts
+  - placehold.it/400x300/ddd
+  - lorem ipsum
 #### Reflections and Comments
 
 - Consider including the answers to your daily journal and submission questions here
