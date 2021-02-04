@@ -75,11 +75,13 @@ function renderFooter() {
   tableFooter.appendChild(tr);
   th.textContent = 'Hourly Totals';
   tr.appendChild(th);
+
   let allStoresDailyTotals = 0;
   for (let i = 0; i < hours.length; i++) {
     let allStoresHourlyTotal = 0;
     for (let j = 0; j < totalCookieStands.length; j++) {
       allStoresHourlyTotal += totalCookieStands[j].cookiesSoldArray[i];
+
     }
     let td = document.createElement('td');
     td.textContent = allStoresHourlyTotal;
