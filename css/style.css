@@ -1,6 +1,7 @@
 /* entire document */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 900px;
 }
 
 /* header */
@@ -9,6 +10,7 @@ header {
   height: auto;
 }
 h1 {
+  font-family: 'Lemonada', cursive;
   font-size: 3em;
   text-align: center;
   margin: auto;
@@ -51,16 +53,17 @@ nav {
   main img {
     margin-top: 30px;
     width: 960px;
-    height: 450px;
+    height: 350px;
+    border: thin double #aaa;
   }
 
   ul img {
-    width: 300px;
+    width: 290px;
     height: 375px;
   }
 
   section img {
-    width: 480px;
+    width: 470px;
     height: 400px;
   }
 
@@ -109,12 +112,11 @@ nav {
     transition: 350ms;
   }
 
-  #table {
-    border: thin double darkblue;
-    width: 960px;
+  table {
+    border: medium double darkblue;
     color: cornflowerblue;
-    margin-top: 2%;
-    position: fixed;
+    margin-top: 30px;
+    width: 960px;
   }
   
   #header {
