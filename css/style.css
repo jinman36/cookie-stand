@@ -1,7 +1,6 @@
 /* entire document */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  height: 900px;
   background: url(../img/Ocean.jpg) no-repeat center center fixed; 
   background-size: cover;
 }
@@ -10,6 +9,7 @@ body {
 header {
   background-color: #444;
   height: auto;
+  border: medium double #aaa;
 }
 h1 {
   font-family: 'Lemonada', cursive;
@@ -49,6 +49,7 @@ nav {
 /* main */
   main {
     width: 960px;
+    height: 1400px;
     margin: auto;
   }
 
@@ -133,10 +134,13 @@ nav {
   
   td {
     border: thin solid rgb(5, 5, 207);
-  } */
+  }
 
 /* footer */
 footer {
-  background-color: #aaa;
-  height: 25px;
+  background-color: #444;
+  color: #aaa;
+  height: 90px;
+  border: medium double #aaa;
+  padding: 5px;
 }
