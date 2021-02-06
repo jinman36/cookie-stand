@@ -81,13 +81,14 @@ function renderFooter() {
     let allStoresHourlyTotal = 0;
     for (let j = 0; j < totalCookieStands.length; j++) {
       allStoresHourlyTotal += totalCookieStands[j].cookiesSoldArray[i];
-
     }
+
     let td = document.createElement('td');
     td.textContent = allStoresHourlyTotal;
     tr.appendChild(td);
     allStoresDailyTotals += allStoresHourlyTotal;
   }
+  
   let td = document.createElement('td');
   td.textContent = allStoresDailyTotals;
   tr.appendChild(td);
