@@ -5,6 +5,10 @@ let tableHeader = document.getElementById('header');
 let tableBody = document.getElementById('body');
 let tableFooter = document.getElementById('footer');
 
+// Add submission form to sales page
+let myForm = document.getElementById('container');
+let parentEl = document.getElementById('results');
+
 let totalCookieStands = [];
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
@@ -81,16 +85,37 @@ function renderFooter() {
     let allStoresHourlyTotal = 0;
     for (let j = 0; j < totalCookieStands.length; j++) {
       allStoresHourlyTotal += totalCookieStands[j].cookiesSoldArray[i];
-
     }
+
     let td = document.createElement('td');
     td.textContent = allStoresHourlyTotal;
     tr.appendChild(td);
     allStoresDailyTotals += allStoresHourlyTotal;
   }
+
   let td = document.createElement('td');
   td.textContent = allStoresDailyTotals;
   tr.appendChild(td);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  let storeLocation = event.target.storelocation.value;
+  let minimumCustomers = +event.target.minimumcustomers.value;
+  let maximumCustomers = +event.target.maximumcustomers.value;
+  let avgCookiesPerCustomer = +event.target.avgcookiespercustomer.value;
+  let cookies = [minimumCustomers, maximumCustomers, avgCookiesPerCustomer];
+
+  console.log(storeLocation);
+  console.log(minimumCustomers);
+  console.log(maximumCustomers);
+  console.log(avgCookiesPerCustomer);
+  console.log(cookies);
+
+  let newStore = new CookieStand(storeLocation, cookies);
+  newStore.render();
+
 }
 
 new CookieStand('Seattle', 23, 65, 6.3);
@@ -109,3 +134,4 @@ renderAll();
 renderHeader();
 renderFooter();
 
+myForm.addEventListener('submit', handleSubmit);
