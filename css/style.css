@@ -11,6 +11,7 @@ header {
   height: auto;
   border: medium double #aaa;
 }
+
 h1 {
   font-family: 'Lemonada', cursive;
   font-size: 3em;
@@ -22,119 +23,149 @@ h1 {
 nav {
   width: 960px;
   margin: auto;
-  }
+}
 
-  header img {
-    width: 200px;
-    height: 70px;
-    margin-top: 15px;
-    float: left;
-  }
+header img {
+  width: 200px;
+  height: 70px;
+  margin-top: 15px;
+  float: left;
+}
 
-  header span {
-    display: inline-block;
-    line-height: 100px;
-    margin-left: 90px;
-  }
+header span {
+  display: inline-block;
+  line-height: 100px;
+  margin-left: 90px;
+}
 
-  header span:nth-child(2) {
-    margin-left: 30px;
-  }
+header span:nth-child(2) {
+  margin-left: 30px;
+}
 
-  nav a {
-    text-decoration: none;
-    color: #aaa;
-  }
+nav a {
+  text-decoration: none;
+  color: #aaa;
+}
 
 /* main */
-  main {
-    width: 960px;
-    height: 1400px;
-    margin: auto;
-  }
+main {
+  width: 960px;
+  height: 1400px;
+  margin: auto;
+}
 
-  main img {
-    margin-top: 30px;
-    width: 960px;
-    height: 350px;
-    border: thick double #aaa;
-  }
+main img {
+  margin-top: 30px;
+  width: 960px;
+  height: 350px;
+  border: thick double #aaa;
+}
 
-  ul img {
-    width: 290px;
-    height: 375px;
-  }
+ul img {
+  width: 290px;
+  height: 375px;
+}
 
-  section img {
-    width: 470px;
-    height: 400px;
-  }
+section img {
+  width: 470px;
+  height: 400px;
+}
 
-  main li:first-child {
-    margin-left: 0px;
-  }
+main li:first-child {
+  margin-left: 0px;
+}
 
-  main li {
-    margin-left: 30px;
-    float: left;
-  }
+main li {
+  margin-left: 30px;
+  float: left;
+}
 
-  main article {
-    width: 50%;
-    float: right;
-    margin-top: 30px;
-  }
+main article {
+  width: 50%;
+  float: right;
+  margin-top: 30px;
+}
 
-  main h2 {
-    margin-left: 30px;
-    font-size: 20px;
-    font-style: italic;
-  }
+main h2 {
+  margin-left: 30px;
+  font-size: 20px;
+  font-style: italic;
+}
 
-  main p {
-    height: 300px;
-    overflow: auto;
-    margin-top: 5px;
-    margin-left: 30px;
-    line-height: 20px;
-    background-color: #aaa;
-  }
+main p {
+  height: 300px;
+  overflow: auto;
+  margin-top: 5px;
+  margin-left: 30px;
+  line-height: 20px;
+  background-color: #aaa;
+}
 
-  article div {
-    background-color: #111;
-    color: #eee;
-    margin-top: 5px;
-    margin-left: 30px;
-    padding: 10px 30px;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 10px;
-      }
+article div {
+  background-color: #111;
+  color: #eee;
+  margin-top: 5px;
+  margin-left: 30px;
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 10px;
+}
 
-  article div:hover {
-    background-color: rgb(63, 30, 210);
-    transition: 350ms;
-  }
+article div:hover {
+  background-color: rgb(63, 30, 210);
+  transition: 350ms;
+}
 
-  table {
-    border: medium double darkblue;
-    color: cornflowerblue;
-    margin-top: 30px;
-    width: 960px;
-    background-color: rgb(216, 212, 212);
-  }
+table {
+  border: medium double darkblue;
+  color: cornflowerblue;
+  margin-top: 30px;
+  width: 960px;
+  background-color: rgb(216, 212, 212);
+}
   
-  #header {
-    border: thin solid rgb(1, 1, 39);
-  }
+#header {
+  border: thin solid rgb(1, 1, 39);
+}
   
-  th {
-    border: thin solid rgb(2, 0, 10);
-  }
+th {
+  border: thin solid rgb(2, 0, 10);
+}
   
-  td {
-    border: thin solid rgb(5, 5, 207);
-  }
+td {
+  border: thin solid rgb(5, 5, 207);
+}
+
+form {
+  padding: 10px;
+  border: thin double black;
+  width: 100%;
+  height: 13%;
+}
+
+legend {
+  border: thick double black;
+  width: 95%;
+  padding: 2px
+}
+
+label {
+  font-size: 1.1em;
+}
+
+input {
+  margin: 5px;
+  width: 250px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  border: thick double black;
+  font-size: 2em;
+  
+}
 
 /* footer */
 footer {
