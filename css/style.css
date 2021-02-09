@@ -143,5 +143,8 @@ footer {
   height: 90px;
   border: medium double #aaa;
   padding: 5px;
-  text-align: right;
+}
+
+span {
+  display: inline-block;
 }
