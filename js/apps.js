@@ -113,7 +113,7 @@ function handleSubmit(event) {
   console.log(avgCookiesPerCustomer);
   console.log(cookies);
 
-  let newStore = new CookieStand(storeLocation, cookies);
+  let newStore = new CookieStand(storeLocation, cookies[0], cookies[1], cookies[2]);
   newStore.render();
 
 }
