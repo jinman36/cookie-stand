@@ -105,17 +105,12 @@ function handleSubmit(event) {
   let minimumCustomers = +event.target.minimumcustomers.value;
   let maximumCustomers = +event.target.maximumcustomers.value;
   let avgCookiesPerCustomer = +event.target.avgcookiespercustomer.value;
-  let cookies = [minimumCustomers, maximumCustomers, avgCookiesPerCustomer];
 
-  console.log(storeLocation);
-  console.log(minimumCustomers);
-  console.log(maximumCustomers);
-  console.log(avgCookiesPerCustomer);
-  console.log(cookies);
-
-  let newStore = new CookieStand(storeLocation, cookies);
+  let newStore = new CookieStand(storeLocation, minimumCustomers, maximumCustomers, avgCookiesPerCustomer);
   newStore.render();
 
+  tableFooter.removeChild(tableFooter.firstChild);
+  renderFooter();
 }
 
 new CookieStand('Seattle', 23, 65, 6.3);
