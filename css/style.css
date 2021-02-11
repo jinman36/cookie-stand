@@ -110,6 +110,7 @@ article div {
   display: inline-block;
   font-size: 20px;
   border-radius: 10px;
+  font-family: serif;
 }
 
 article div:hover {
@@ -117,16 +118,18 @@ article div:hover {
   transition: 350ms;
 }
 
+/* Sales table */
 table {
-  border: medium double darkblue;
-  color: cornflowerblue;
+  font-family: sans-serif;
+  border: medium double rgb(131, 131, 218);
+  color: rgb(3, 40, 109);
   margin-top: 30px;
   width: 960px;
   background-color: rgb(216, 212, 212);
 }
   
 #header {
-  border: thin solid rgb(1, 1, 39);
+  border: thin solid rgb(101, 101, 179);
 }
   
 th {
@@ -134,9 +137,10 @@ th {
 }
   
 td {
-  border: thin solid rgb(5, 5, 207);
+  border: thin solid rgb(3, 3, 121);
 }
 
+/* form */
 form {
   padding: 10px;
   border: thin double black;
@@ -145,7 +149,7 @@ form {
 }
 
 legend {
-  border: thick double black;
+  border: thick double rgb(34, 53, 112);
   width: 95%;
   padding: 2px
 }
