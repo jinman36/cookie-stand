@@ -132,13 +132,13 @@ table {
   border: thin solid rgb(101, 101, 179);
 }
   
-th {
+th, th {
   border: thin solid rgb(2, 0, 10);
 }
   
-td {
+/* td {
   border: thin solid rgb(3, 3, 121);
-}
+} */
 
 /* form */
 form {
